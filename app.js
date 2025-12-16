@@ -1,9 +1,9 @@
 alert('Wellcome to guess number game!');
 
-let numeroSecreto = 6;
+let numeroSecreto = parseInt((Math.random() * 10) + 1);
 
 let chute;
-let tentativa = 0;
+let tentativa = 1;
 
 while (chute != numeroSecreto){
 
@@ -29,6 +29,9 @@ while (chute != numeroSecreto){
     tentativa++
 }
 
+let palavraTentativas = tentativa > 1 ? "tentativas" : "tentativa";
+alert(`Parabéns, você acertou o número secreto ${numeroSecreto} com ${tentativa} ${palavraTentativas}.`);
+/* 
 if (tentativa == 1) {
 
     alert(`Parabéns, você acertou o número secreto ${numeroSecreto} com ${tentativa} tentativa.`);
@@ -37,4 +40,5 @@ if (tentativa == 1) {
     
     alert(`Parabéns, você acertou o número secreto ${numeroSecreto} com ${tentativa} tentativas.`);
 
-}
+} 
+*/
