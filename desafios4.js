@@ -68,7 +68,7 @@ if (nota > 7){
 console.log(Math.random());
 
 // Use o Math.random para gerar um número inteiro entre 1 e 10 e exiba esse número no console.
-console.log(Math.floor(Math.random() * 10));
+console.log(parseInt(Math.random() * 10));
 
 // Use o Math.random para gerar um número inteiro entre 1 e 1000 e exiba esse número no console.
 console.log(Math.floor(Math.random() * 1000));
