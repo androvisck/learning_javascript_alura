@@ -14,4 +14,8 @@ https://cursos.alura.com.br/course/cypress-automatizando-testes-e2e
 - git init
 - npm init
 - npm install cypress --save-dev
+<<<<<<< HEAD
 - npx cypress open (or npx cypress run --browser chrome)
+=======
+- npx cypress open (or npx cypress run --browser chrome)
+>>>>>>> dd353537b63ba6701a6f4e55f9c1aafae6ca428f
