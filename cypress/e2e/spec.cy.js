@@ -5,15 +5,18 @@ describe('template spec', () => {
     
     cy.get('a[data-test="register-button"]').click();
     
-    cy.get('input[name="nome"]').type('Escrite Machado de Assis');
+    cy.get('[data-test="input-name"]').type('Escrite Machado de Assis');
     
-    cy.get('input[name="email"]').type('escritor_machado_assis@gmail.com');
+    let number = Math.floor(Math.random() * 100);
+
+    cy.get('[data-test="input-email"]').type(`machado_assis${number}@gmail.com`);
     
-    cy.get('input[name="password"]').type('As12345!@#');
+    cy.get('[data-test="input-password"]').type(`As12${number}!@#`);
     
-    cy.get('input[name="confirm_password"]').type('As12345!@#');
+    cy.get('[data-test="input-confirm-password"]').type(`As12${number}!@#`);
   
-    cy.get('button[data-test="submit-button"]').click();
+    cy.get('[data-test="submit-button"]').click();
 
   })
+
 })
