@@ -1,12 +1,10 @@
-/*
-Exercícios
+// Exercícios Com o Cypress, escreva os códigos dos seguintes testes:
 
-Com o Cypress, escreva os códigos dos seguintes testes:
+// for extensions support 
+/// <reference types="cypress"/>
 
-*/
-
-describe('template spec', () => {
-  it('passes', () => {
+describe('Pagina de Cadastro', () => {
+  it('Deve preencher os campos do formulario corretamente para cadastrar um novo usuário', () => {
     // Visite a página principal do AdoPet e clique no botão ‘Ver pets disponíveis para adoção”;
     cy.visit('https://adopet-frontend-cypress.vercel.app');
     
