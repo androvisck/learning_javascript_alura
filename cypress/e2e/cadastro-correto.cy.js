@@ -1,5 +1,7 @@
-describe('template spec', () => {
-  it('passes', () => {
+/// <reference types="cypress"/>
+
+describe('Pagina de Cadastro', () => {
+  it('Deve preencher os campos do formulario corretamente para cadastrar um novo usuário', () => {
     
     cy.visit('https://adopet-frontend-cypress.vercel.app');
     

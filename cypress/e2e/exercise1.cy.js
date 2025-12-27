@@ -3,8 +3,8 @@
 // for extensions support 
 /// <reference types="cypress"/>
 
-describe('Pagina de Cadastro', () => {
-  it('Deve preencher os campos do formulario corretamente para cadastrar um novo usuário', () => {
+describe('Exercício 1 de Cypress', () => {
+  it('Deve realizar varias atividade de acordo com os comentários', () => {
     // Visite a página principal do AdoPet e clique no botão ‘Ver pets disponíveis para adoção”;
     cy.visit('https://adopet-frontend-cypress.vercel.app');
     
