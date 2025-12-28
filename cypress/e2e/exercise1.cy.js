@@ -26,9 +26,9 @@ describe('Exercício 1 de Cypress', () => {
     
     cy.get('a[data-test="login-button"]').click();
 
-    cy.get('input[name="email"]').type('escritor_machado_assis@gmail.com');
+    cy.get('input[name="email"]').type('ana@email.com');
 
-    cy.get('input[name="password"]').type('As12345!@#');
+    cy.get('input[name="password"]').type('Senha123');
 
     // Visite a página /home do AdoPet e clique no botão “Falar com o responsável”.
     cy.get('button[data-test="submit-button"]').click();
