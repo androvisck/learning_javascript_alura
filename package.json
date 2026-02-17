@@ -1,6 +1,15 @@
 {
+  "scripts": {
+    "lint": "eslint cypress/**/*.js && eslint cypress.config.js",
+    "lint:fix": "eslint cypress/**/*.js --fix && eslint cypress.config.js --fix",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "devDependencies": {
+    "@eslint/js": "^10.0.1",
     "cypress": "^15.10.0",
+    "eslint": "^10.0.0",
+    "eslint-plugin-cypress": "^6.0.0",
+    "globals": "^17.3.0",
     "mochawesome": "^7.1.4",
     "react-scripts": "5.0.1"
   }
