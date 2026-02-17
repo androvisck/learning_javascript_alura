@@ -1,5 +1,6 @@
 {
   "devDependencies": {
-    "mochawesome": "^7.1.4"
+    "mochawesome": "^7.1.4",
+    "react-scripts": "5.0.1"
   }
 }
