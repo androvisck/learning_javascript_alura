@@ -2,11 +2,15 @@
 
 Steps to Run
 
+### NodeJS
+To install NodeJS please follow this tutorial.
+```
+sudo apt install npm](https://www.geeksforgeeks.org/node-js/installation-of-node-js-on-linux/)
+```
 ### Cypress
 ```
 npm install cypress --save-dev
 ```
-
 ```
 npx cypress open
 ```
