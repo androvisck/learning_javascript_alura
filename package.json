@@ -1,10 +1,18 @@
 {
+  "name": "vollmedcy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "scripts": {
       "lint": "eslint cypress/**/*.js && eslint cypress.config.js",
       "lint:fix": "eslint cypress/**/*.js --fix && eslint cypress.config.js --fix",
-      "test": "echo \"Error: no test specified\" && exit 1"
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "test:browser:chromium": "cypress run --browser chromium",
+      "test:tablet_portrait": "cypress run --config viewportWidth=768 viewportHeight=1024",
+      "test:tablet_landscape": "cypress run --config viewportWidth=1024 viewportHeight=768"
   },
-
+  "author": "",
+  "license": "ISC",
   "devDependencies": {
     "@eslint/js": "^10.0.1",
     "cypress": "^15.10.0",
