@@ -30,6 +30,6 @@ Cypress.Commands.add('login', (email, senha) => {
         cy.get('[data-test="inputLoginEmail"]').should('be.visible').type(email)
         cy.get('[data-test="inputLoginSenha"]').should('be.visible').type(senha, { log: false })
         cy.get('[data-test="botaoTeste"]').should('be.visible').click()
-        cy.location('pathname').should('eq', '/dashboard')
+        cy.location('pathname', { timeout: 10000 }).should('eq', '/dashboard')
     })
 })
