@@ -23,4 +23,12 @@
 	"exclude": [
 		"node_modules"
 	],
+    
+      "compilerOptions": {
+        "skipLibCheck": true,           
+        "moduleResolution": "node",     
+        "allowSyntheticDefaultImports": true
+      },
+      "exclude": ["node_modules"]      
+    
 }
