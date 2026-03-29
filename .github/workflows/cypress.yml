@@ -33,13 +33,12 @@ jobs:
           done
           echo "Server is running successfully."
 
-      - name: Start FrontEnd Web App
-        run: |
-          cd web
-          # Use legacy-peer-deps to avoid the ajv/eslint conflicts
-          npm install --legacy-peer-deps
-          # BROWSER=none prevents React from trying to open a window in CI
-          BROWSER=none npm start &
+      - name: Start Web App FrontEnd
+          run: |
+            cd web
+            npm install --legacy-peer-deps
+            # CI=false prevents warnings from being treated as crash-errors
+            CI=false BROWSER=none npm start &
 
       - name: Run Cypress Tests
         uses: cypress-io/github-action@v6
